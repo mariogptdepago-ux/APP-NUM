@@ -1,0 +1,266 @@
+[
+  {
+    "id": "concepto_limite_err_1",
+    "skillId": "concepto_limite",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "concepto_limite_err_2",
+    "skillId": "concepto_limite",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "concepto_limite_err_3",
+    "skillId": "concepto_limite",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "concepto_limite_err_4",
+    "skillId": "concepto_limite",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "valor_vs_limite_err_1",
+    "skillId": "valor_vs_limite",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "valor_vs_limite_err_2",
+    "skillId": "valor_vs_limite",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "valor_vs_limite_err_3",
+    "skillId": "valor_vs_limite",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "valor_vs_limite_err_4",
+    "skillId": "valor_vs_limite",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "tablas_err_1",
+    "skillId": "tablas",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "tablas_err_2",
+    "skillId": "tablas",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "tablas_err_3",
+    "skillId": "tablas",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "tablas_err_4",
+    "skillId": "tablas",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "graficas_err_1",
+    "skillId": "graficas",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "graficas_err_2",
+    "skillId": "graficas",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "graficas_err_3",
+    "skillId": "graficas",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "graficas_err_4",
+    "skillId": "graficas",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "limite_lateral_izquierdo_err_1",
+    "skillId": "limite_lateral_izquierdo",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "limite_lateral_izquierdo_err_2",
+    "skillId": "limite_lateral_izquierdo",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "limite_lateral_izquierdo_err_3",
+    "skillId": "limite_lateral_izquierdo",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "limite_lateral_izquierdo_err_4",
+    "skillId": "limite_lateral_izquierdo",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "limite_lateral_derecho_err_1",
+    "skillId": "limite_lateral_derecho",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "limite_lateral_derecho_err_2",
+    "skillId": "limite_lateral_derecho",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "limite_lateral_derecho_err_3",
+    "skillId": "limite_lateral_derecho",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "limite_lateral_derecho_err_4",
+    "skillId": "limite_lateral_derecho",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "limite_bilateral_err_1",
+    "skillId": "limite_bilateral",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "limite_bilateral_err_2",
+    "skillId": "limite_bilateral",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "limite_bilateral_err_3",
+    "skillId": "limite_bilateral",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "limite_bilateral_err_4",
+    "skillId": "limite_bilateral",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "huecos_saltos_err_1",
+    "skillId": "huecos_saltos",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "huecos_saltos_err_2",
+    "skillId": "huecos_saltos",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "huecos_saltos_err_3",
+    "skillId": "huecos_saltos",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "huecos_saltos_err_4",
+    "skillId": "huecos_saltos",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "expresiones_algebraicas_err_1",
+    "skillId": "expresiones_algebraicas",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "expresiones_algebraicas_err_2",
+    "skillId": "expresiones_algebraicas",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "expresiones_algebraicas_err_3",
+    "skillId": "expresiones_algebraicas",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "expresiones_algebraicas_err_4",
+    "skillId": "expresiones_algebraicas",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "aplicacion_err_1",
+    "skillId": "aplicacion",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "aplicacion_err_2",
+    "skillId": "aplicacion",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "aplicacion_err_3",
+    "skillId": "aplicacion",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "aplicacion_err_4",
+    "skillId": "aplicacion",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  },
+  {
+    "id": "sintesis_err_1",
+    "skillId": "sintesis",
+    "name": "Confundir tendencia con valor exacto",
+    "shortHint": "El límite mira valores cercanos, no necesariamente el valor en el punto."
+  },
+  {
+    "id": "sintesis_err_2",
+    "skillId": "sintesis",
+    "name": "Mirar un solo lado",
+    "shortHint": "Cuando sea bilateral, compara izquierda y derecha antes de concluir."
+  },
+  {
+    "id": "sintesis_err_3",
+    "skillId": "sintesis",
+    "name": "Responder por memoria",
+    "shortHint": "Busca el patrón de aproximación; no memorices el número visible."
+  },
+  {
+    "id": "sintesis_err_4",
+    "skillId": "sintesis",
+    "name": "Promediar laterales distintos",
+    "shortHint": "Si los laterales son distintos, el límite bilateral no existe."
+  }
+]

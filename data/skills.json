@@ -1,0 +1,57 @@
+[
+  {
+    "id": "concepto_limite",
+    "name": "Concepto de límite",
+    "purpose": "Entender que el límite describe una tendencia de aproximación."
+  },
+  {
+    "id": "valor_vs_limite",
+    "name": "Valor puntual vs. límite",
+    "purpose": "Diferenciar el valor exacto de la función y el valor límite."
+  },
+  {
+    "id": "tablas",
+    "name": "Estimación mediante tablas",
+    "purpose": "Estimar el límite observando valores que se acercan por ambos lados."
+  },
+  {
+    "id": "graficas",
+    "name": "Estimación mediante gráficas",
+    "purpose": "Leer el comportamiento cercano en una representación gráfica."
+  },
+  {
+    "id": "limite_lateral_izquierdo",
+    "name": "Límite lateral izquierdo",
+    "purpose": "Interpretar la aproximación x → a⁻."
+  },
+  {
+    "id": "limite_lateral_derecho",
+    "name": "Límite lateral derecho",
+    "purpose": "Interpretar la aproximación x → a⁺."
+  },
+  {
+    "id": "limite_bilateral",
+    "name": "Límite bilateral",
+    "purpose": "Decidir si el límite existe comparando laterales."
+  },
+  {
+    "id": "huecos_saltos",
+    "name": "Huecos, saltos y discontinuidades",
+    "purpose": "Reconocer cuándo un hueco permite límite y cuándo un salto lo impide."
+  },
+  {
+    "id": "expresiones_algebraicas",
+    "name": "Expresiones algebraicas",
+    "purpose": "Resolver límites sencillos por sustitución o simplificación."
+  },
+  {
+    "id": "aplicacion",
+    "name": "Aplicación contextual",
+    "purpose": "Interpretar límites en situaciones de temperatura, velocidad, posición o datos."
+  },
+  {
+    "id": "sintesis",
+    "name": "Síntesis",
+    "purpose": "Integrar tablas, gráficas, laterales y expresiones para concluir correctamente."
+  }
+]

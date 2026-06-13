@@ -1,0 +1,12 @@
+[
+  {
+    "id": "limites_continuidad_num",
+    "axis": "Límites",
+    "name": "Módulo adaptativo de límites",
+    "learning": "Comprende los conceptos de límite y continuidad y los aplica en diferentes contextos.",
+    "descriptors": [
+      "Comprende el concepto de valor límite y límites laterales y los estima mediante tablas, gráficas y expresiones algebraicas."
+    ],
+    "scheduleDays": 3
+  }
+]
