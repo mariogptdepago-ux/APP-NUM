@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verificar diploma | Pablo VI Math App</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <main class="verify-page">
+    <section class="card wide">
+      <h1>Verificación de mini diploma</h1>
+      <p>Ingrese el código único impreso en el diploma.</p>
+      <div class="form-row">
+        <input id="certificateCode" placeholder="Ej. PVI-LIM-2026-9B-A7F3-K92Q-HM8X" />
+        <button id="verifyBtn" class="btn primary">Verificar</button>
+      </div>
+      <div id="result" class="result-box"></div>
+    </section>
+  </main>
+  <script src="src/config.js"></script>
+  <script src="src/api.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const code = params.get('code');
+    if (code) document.getElementById('certificateCode').value = code;
+    document.getElementById('verifyBtn').addEventListener('click', async () => {
+      const certificateId = document.getElementById('certificateCode').value.trim();
+      const box = document.getElementById('result');
+      if (!certificateId) { box.innerHTML = '<p class="bad">Debe escribir un código.</p>'; return; }
+      box.innerHTML = '<p>Consultando registro maestro...</p>';
+      const res = await PVI_API.verifyCertificate(certificateId);
+      if (!res.ok) {
+        box.innerHTML = `<p class="bad">${res.message || 'Código no válido o no registrado.'}</p>`;
+        return;
+      }
+      const c = res.certificate;
+      box.innerHTML = `
+        <h2 class="ok">Diploma válido</h2>
+        <p><strong>Estudiante:</strong> ${c.studentName}</p>
+        <p><strong>Grado:</strong> ${c.grade}</p>
+        <p><strong>Eje temático:</strong> ${c.axisName}</p>
+        <p><strong>Fecha:</strong> ${c.issuedAt}</p>
+        <p><strong>Dominio:</strong> ${Math.round(Number(c.mastery || 0) * 100)}%</p>
+        <p><strong>Descriptores:</strong><br>${String(c.descriptors || '').replaceAll('|','<br>')}</p>
+      `;
+    });
+  </script>
+</body>
+</html>

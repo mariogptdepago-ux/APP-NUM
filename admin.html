@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel superusuario | Pablo VI Math App</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <main class="admin-page">
+    <section class="card wide">
+      <h1>Panel del superusuario</h1>
+      <p>Este panel consulta el backend gratuito de Google Apps Script. Configure primero la URL en <code>src/config.js</code>.</p>
+      <div class="grid two">
+        <button id="loadCerts" class="btn primary">Cargar certificados</button>
+        <button id="downloadAudit" class="btn secondary">Descargar vista CSV</button>
+      </div>
+      <div id="adminResult" class="table-wrap"></div>
+    </section>
+  </main>
+  <script src="src/config.js"></script>
+  <script src="src/api.js"></script>
+  <script>
+    let currentRows = [];
+    document.getElementById('loadCerts').addEventListener('click', async () => {
+      const box = document.getElementById('adminResult');
+      box.innerHTML = '<p>Cargando...</p>';
+      const res = await PVI_API.listCertificates();
+      if (!res.ok) { box.innerHTML = '<p class="bad">No se pudo consultar el backend. Revise Apps Script.</p>'; return; }
+      currentRows = res.certificates || [];
+      box.innerHTML = `<table><thead><tr><th>Código</th><th>Estudiante</th><th>Grado</th><th>Eje</th><th>Fecha</th><th>Estado</th></tr></thead><tbody>${currentRows.map(c => `<tr><td>${c.certificateId}</td><td>${c.studentName}</td><td>${c.grade}</td><td>${c.axisName}</td><td>${c.issuedAt}</td><td>${c.status}</td></tr>`).join('')}</tbody></table>`;
+    });
+    document.getElementById('downloadAudit').addEventListener('click', () => {
+      const headers = ['certificateId','studentName','grade','axisName','issuedAt','status'];
+      const rows = [headers, ...currentRows.map(r => headers.map(h => r[h] || ''))];
+      const csv = rows.map(row => row.map(v => `"${String(v).replaceAll('"','""')}"`).join(';')).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'certificados_superusuario.csv'; a.click();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
